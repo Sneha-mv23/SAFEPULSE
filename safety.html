@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafePulse - Area Safety & Reports</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="safety.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🛡️ Area Safety & Suspicious Reports</h1>
+    <p>Stay informed. Act responsibly. Help prevent threats.</p>
+  </header>
+
+  <main class="safety-section">
+    <section class="threat-level">
+      <h2>🔍 Threat Level in Your Area</h2>
+      <p id="threat-status">Checking safety data...</p>
+    </section>
+
+    <section class="report-section">
+      <h2>🗳️ Report Suspicious Activity</h2>
+      <form id="report-form">
+        <textarea id="report-text" placeholder="Describe suspicious activity..." required></textarea>
+        <input type="text" id="report-location" placeholder="Location or landmark" required />
+        <button type="submit">Submit Report</button>
+      </form>
+      <p id="report-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SafePulse</p>
+  </footer>
+</body>
+</html>

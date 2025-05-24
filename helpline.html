@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafePulse - Emergency Helplines</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="helpline.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📞 Emergency Helplines</h1>
+    <p>Access trusted contacts quickly. Tap to call.</p>
+  </header>
+
+  <main class="helpline-section">
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search helplines...">
+    </div>
+
+    <section class="helpline-category">
+      <h2>🚨 Emergency Services</h2>
+      <ul>
+        <li><strong>Police:</strong> <a href="tel:100">100</a></li>
+        <li><strong>All-in-One Emergency:</strong> <a href="tel:112">112</a></li>
+      </ul>
+    </section>
+
+    <section class="helpline-category">
+      <h2>🛡️ Anti-Terror & Security</h2>
+      <ul>
+        <li><strong>Anti-Terror Helpline:</strong> <a href="tel:1090">1090</a></li>
+        <li><strong>Army Control Room:</strong> <a href="tel:01123019831">011-23019831</a></li>
+      </ul>
+    </section>
+
+    <section class="helpline-category">
+      <h2>👩 Women & Child Safety</h2>
+      <ul>
+        <li><strong>Women Helpline:</strong> <a href="tel:1091">1091</a></li>
+        <li><strong>Child Helpline:</strong> <a href="tel:1098">1098</a></li>
+      </ul>
+    </section>
+
+    <section class="helpline-category custom-contact">
+      <h2>📲 Trusted Contacts</h2>
+      <ul id="custom-contact-list">
+        <li>No contacts added yet.</li>
+      </ul>
+      <div class="add-contact-form">
+        <input type="text" id="contact-name" placeholder="Name" />
+        <input type="tel" id="contact-number" placeholder="Phone Number" />
+        <button id="add-contact-btn">Add Contact</button>
+      </div>
+    </section>
+
+    <p class="helpline-note">📌 Save these numbers. Stay alert. Stay safe.</p>
+    <script src="helpline.js"></script>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SafePulse</p>
+  </footer>
+</body>
+</html>
