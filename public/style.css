@@ -1,0 +1,398 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always two columns */
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.square-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 171, 144);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  height: 200px;
+  width: 200px;
+}
+
+.square-button:hover {
+  background-color: rgb(4, 65, 54);
+}
+
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Emergency Button */
+.emergency-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+#emergency-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#emergency-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Map */
+#map {
+  height: 500px;
+  width: 90%;
+  margin: 2rem auto;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  border: 2px solid #004466;
+  
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Helpline Page */
+main.helpline-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ==== SEARCH ==== */
+.search-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ==== CATEGORY SECTIONS ==== */
+.helpline-category {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #004466;
+}
+
+.helpline-category h2 {
+  font-size: 1.25rem;
+  color: #004466;
+  margin-bottom: 1rem;
+  border-left: 4px solid #004466;
+  padding-left: 10px;
+}
+
+.helpline-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.helpline-category ul li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.helpline-category a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.helpline-category a:hover {
+  text-decoration: underline;
+}
+
+/* ==== CUSTOM CONTACTS ==== */
+.custom-contact {
+  border-top: 2px dashed #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+.add-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.add-contact-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+#add-contact-btn {
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-contact-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* ==== NOTE ==== */
+.helpline-note {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .helpline-category {
+    padding: 1rem;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+}
+
+/* Safety Section Styling */
+.safety-section {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.safety-section h2 {
+  margin-top: 1.2rem;
+  color: #333;
+}
+
+.threat-level p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.report-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+ 
+
+}
+
+#report-text {
+  height: 250px;
+  padding: 0.6rem;
+  resize: vertical;
+   border-left: 4px solid #004466;
+  border-radius: 6px;
+  font-size: 1rem;
+   
+}
+
+#report-location {
+  padding: 0.6rem;
+   border-left: 4px solid #004466;
+    
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#report-form button {
+  background-color: #c0392b;
+  color: white;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#report-form button:hover {
+  background-color: #e74c3c;
+}
+
+#report-status {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Disable user selection */
+.element {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+  user-select: none;         /* Modern browsers */
+}
+
+
+/* Header styling */
+header {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Main guide container */
+.guide-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Each section box */
+.guide-section {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guide-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.guide-section h2 {
+  font-size: 1.4rem;
+  color: #004466;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0088cc;
+  padding-left: 10px;
+}
+
+/* List styling */
+.guide-section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.guide-section ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .guide-section {
+    padding: 1rem;
+  }
+}

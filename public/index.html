@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafePulse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>SAFEPULSE</h1>
+    <p>Your safety companion while you travel<br>
+       <strong>United Against Terror — Empowering Safety, Defending Peace</strong>
+    </p>
+  </header>
+
+  <main>
+    <div class="button-grid">
+      <a href="map.html" class="square-button" title="See threat zones and your location on the map"> View Map</a>
+      <a href="helpline.html" class="square-button" title="Access emergency and personal contact numbers"> Helpline Numbers</a>
+      <a href="guide.html" class="square-button" title="Read essential safety tips"> Trusted Safety Guide</a>
+      <a href="safety.html" class="square-button" title="Report anything suspicious to help others"> Report Suspicious Activity</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="emergency-container">
+      <button id="emergency-button" title="Click to send emergency alert to nearby users" role="button">
+        🚨 Emergency
+      </button>
+    </div>
+    <p>&copy; 2025 SafePulse</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
